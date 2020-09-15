@@ -1,11 +1,11 @@
 //Maya ASCII 2019 scene
 //Name: Drone_Rough2.ma
-//Last modified: Tue, Sep 15, 2020 05:16:00 PM
+//Last modified: Tue, Sep 15, 2020 05:43:56 PM
 //Codeset: 1252
 requires maya "2019";
-requires "mtoa" "3.1.2";
 requires -nodeType "polyDisc" "modelingToolkit" "0.0.0.0";
 requires "stereoCamera" "10.0";
+requires "mtoa" "3.1.2";
 requires "stereoCamera" "10.0";
 currentUnit -l inch -a degree -t film;
 fileInfo "application" "maya";
@@ -16,8 +16,8 @@ fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18362)\n";
 createNode transform -s -n "persp";
 	rename -uid "A10E8C78-4762-0BCA-A19B-D1BBB53FE692";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 4.203037860063259 1.3227290689103843 -0.80685478655624743 ;
-	setAttr ".r" -type "double3" -20.738352731004266 1616.1999999997324 0 ;
+	setAttr ".t" -type "double3" 4.9362536148622471 4.7179570639218316 0.65021337872424279 ;
+	setAttr ".r" -type "double3" -66.938352731003434 1550.9999999997258 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "F49AE2EF-4A62-6222-AE84-168003FEAA3A";
 	setAttr -k off ".v" no;
@@ -25,7 +25,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.03937007874015748;
 	setAttr ".fcp" 3937.0078740157478;
 	setAttr ".fd" 1.9685039370078738;
-	setAttr ".coi" 3.071273151767925;
+	setAttr ".coi" 4.809967435310992;
 	setAttr ".ow" 3.9370078740157477;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
